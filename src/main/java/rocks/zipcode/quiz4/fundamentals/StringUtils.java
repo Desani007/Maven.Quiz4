@@ -1,9 +1,11 @@
 package rocks.zipcode.quiz4.fundamentals;
 
 import javax.sql.rowset.serial.SerialStruct;
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author leon on 21/12/2018.
@@ -81,13 +83,24 @@ public class StringUtils {
     }
 
     public static String removeConsecutiveDuplicateCharacters(String str) {
-        String [] string = str.split("");
-        for(int i=0; i<string.length;i++) {
-        }
+      String result ="";
+      String res ="";
+      String [] arr = str.split("");
+
+        for (int i=1; i < arr.length ; i++) {
+
+
+            if (arr[i-1].equals(arr[i])){
+                result+=arr[i];
+                str=str.replace(result,"");
+                result="";
+
+            }
 
 
 
-    return "";
+      }
+      return str;
     }
 
     public static String invertCasing(String str) {
