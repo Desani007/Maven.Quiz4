@@ -31,7 +31,7 @@ public class GetAllSpicesTest {
     @Test
     public void test1() {
         // given
-        test(Arrays.asList((Spice) new Curry()));
+           test(Arrays.asList((Spice) new Curry()));
     }
 
     @Test

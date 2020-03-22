@@ -11,8 +11,7 @@ import rocks.zipcode.quiz4.objectorientation.account.Transactable;
  */
 public class EmployeeDepositTest {
     @Test
-    public void test1() {
-        test(0.0, 10.0);
+    public void test1() { test(0.0, 10.0);
     }
 
     @Test
